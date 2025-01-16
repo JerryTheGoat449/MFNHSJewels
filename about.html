@@ -1,3 +1,17 @@
+Let's create a new `aboutscript.js` file for the JavaScript effects and update the `about.html` to link to this script.
+
+### JavaScript (`aboutscript.js`)
+```javascript
+function showImage(imageId) {
+    const images = document.querySelectorAll('.section-content img');
+    images.forEach(img => img.style.display = 'none');
+    document.getElementById(imageId).style.display = 'block';
+}
+```
+
+### HTML (`about.html`)
+Update your `about.html` file to include the script and the necessary buttons:
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,6 +19,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bonocan-First-Website</title>
         <link rel="stylesheet" href="aboutstyle.css">
+        <style>
+            .button-container {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .button-container button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .section-content img {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -28,15 +67,21 @@
                 <h1>Manolo Fortich</h1>
                 <h1>National High School</h1>
                 <h2>Home of the Spotless Jewels</h2>
-               <br>
+                <br>
                 <img src="PHOTOS/MFNHS ORIGANIZATIONAL CHART.jpg" id="Chart">
-            </br>
-            <br>
-            <img src="PHOTOS/visionmission.jpg." id="visionmission">
-    </br>
-    <br>
-            <img src="PHOTOS/almamatersong.jpg" id="almamater">
-    </br>
+                </br>
+                <br>
+                <img src="PHOTOS/visionmission.jpg." id="visionmission">
+                </br>
+                <br>
+                <img src="PHOTOS/almamatersong.jpg" id="almamater">
+                </br>
+                <div class="button-container">
+                    <button onclick="showImage('Chart')">Chart</button>
+                    <button onclick="showImage('visionmission')">Vision & Mission</button>
+                    <button onclick="showImage('almamater')">Alma Mater Song</button>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="footer-row">
@@ -51,7 +96,7 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/">Facebook</a></li>
-                        <li><a href="https://www.bing.com/search?pglt=2083&q=manolo+fortich+national+high+school&cvid=4c5cfeb8f22d466485e5150c67e30399&gs_lcrp=EgRlZGdlKgcIABAAGPkHMgcIABAAGPkHMgYIARBFGDkyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCDk2NTdqMGoxqAIAsAIA&FORM=ANNTA1&DAF0=1&PC=ACTS">📍Location📍</a></li>
+                        <li><a href="https://www.bing.com/search?pglt=2083&q=manolo+fortich+national+high+school&cvid=4c5cfeb8f22d466485e5150c67e30399&gs_lcrp=EgRlZGdlKgcIABAAGPkHMgcIABAAGPkHMgYIA[...]">Bing</a></li>
                         <li><a href="https://www.findglocal.com/PH/Bukidnon/102959678260282/Manolo-Fortich-NHS---Guidance-Office">Help</a></li>
                     </ul>
                 </div>
@@ -64,5 +109,9 @@
                 </div>
             </div>
         </footer>
+        <script src="aboutscript.js"></script>
     </body>
 </html>
+```
+
+This separates the JavaScript into a dedicated file and updates the HTML to include this script.
