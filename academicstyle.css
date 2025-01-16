@@ -1,0 +1,163 @@
+* {
+    margin:0rcap;
+    padding:0cqmax;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background: aqua;
+    color: black;
+    padding: 10px, 20pc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+}
+
+.navbar li a {
+    color: blueviolet;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar li a.active,
+.navbar li a:hover {
+    background: lightskyblue;
+    color: blue;
+    border-radius: 20px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: skyblue;
+}
+ section {
+    background: blue;
+ }
+
+
+ section h1{
+    color:azure;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ }
+
+
+#STEM {
+    text-decoration:None;
+    color:lavenderblush;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: lightskyblue;
+    border-radius: 5px;
+}
+#SPA {
+    text-decoration:None;
+    color:lavenderblush;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: lightskyblue;
+    border-radius: 5px;
+}
+#SPS {
+    text-decoration:None;
+    color:lavenderblush;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: lightskyblue;
+    border-radius: 5px;
+}
+footer {
+    background: aqua;
+    color: black;
+    padding: 0px;
+    text-align: center;
+}
+
+.footer-row  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.footer-col ul li a:hover {
+    color: darkblue;
+}
+
+.footer-col form {
+    margin-top: 5px;
+}
+
+.footer-col input {
+    padding: 5px;
+    border: none;
+}
+
+.footer-col button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-col button:hover {
+    background: gray;
+}
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:che {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+
+}
