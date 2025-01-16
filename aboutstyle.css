@@ -48,24 +48,24 @@ nav {
     font-size: 14px;
     color: skyblue;
 }
- section {
+
+section {
     background: blue;
- }
+}
 
-
- section .section-content h1{
+section .section-content h1{
     color:azure;
     font-size: 100px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
- }
+}
 
- section .section-content h2{
+section .section-content h2{
     color:lavenderblush;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
- }
+}
 
 #Chart {
     height: 1500px;
@@ -74,6 +74,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
 #visionmission{
     height: 1000px;
     width: 1200px;
@@ -81,6 +82,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
 #almamater{
     height: 1300px;
     width: 1200px;
@@ -88,6 +90,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
+
 footer {
     background: aqua;
     color: black;
@@ -146,6 +149,7 @@ footer {
 .footer-col button:hover {
     background: gray;
 }
+
 #menu-toggle {
     display: none;
 }
@@ -158,6 +162,28 @@ footer {
     .menu-icon {
         display: block;
     }
+}
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.button-container button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.section-content img {
+    display: none;
 }
